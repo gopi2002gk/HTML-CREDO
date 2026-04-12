@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Student Actions</title>
+</head>
+
+<body>
+
+<h2>Student Portal</h2>
+
+<!-- Button 1 -->
+<button 
+    style="background-color: green; color: white;"
+    onclick="showMessage()"
+>
+    Check Result
+</button>
+
+<br><br>
+
+<!-- Button 2 -->
+<button 
+    style="background-color: blue; color: white;"
+    onclick="submitForm()"
+    ondblclick="alert('Form Cancelled')"
+>
+    Submit Form
+</button>
+
+<script>
+
+function showMessage() {
+    alert("Your result is published ✅");
+}
+
+function submitForm() {
+    console.log("Form Submitted Successfully ");
+}
+
+</script>
+
+</body>
+</html>

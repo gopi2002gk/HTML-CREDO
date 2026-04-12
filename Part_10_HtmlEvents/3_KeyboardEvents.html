@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Keyboard Event</title>
+</head>
+
+<body>
+
+    <h1>Keyboard Events</h1>
+
+    <p>Message:</p>
+
+    <textarea 
+        id="messageBox"
+        onkeyup="showText()"
+        placeholder="Type something Gopi..."
+        style="width:300px; height:100px;"
+    ></textarea>
+
+    <p id="output">Typing will appear here...</p>
+
+    <br><br>
+
+    <p>Candidate Name:</p>
+
+    <input 
+        type="text" 
+        onkeyup="showName(this.value)" 
+        placeholder="Enter your name"
+    >
+
+    <p id="nameOutput"></p>
+
+    <script>
+        function showText() {
+            let text = document.getElementById("messageBox").value;
+            document.getElementById("output").innerHTML = "Gopi typing: " + text;
+        }
+
+        function showName(value) {
+            document.getElementById("nameOutput").innerHTML = "Hello Gopi: " + value;
+        }
+    </script>
+
+</body>
+</html>
