@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Job Registration Form</title>
+</head>
+
+<body>
+
+<h2>Job Registration Form </h2>
+
+<form>
+
+<!-- Name -->
+<div>
+    <label>Candidate Name <span style="color:red">*</span></label>
+    <input 
+        type="text" 
+        placeholder="ex: saravanan"
+        required
+        minlength="3"
+        maxlength="20"
+    >
+</div>
+
+<br>
+
+<!-- Email -->
+<div>
+    <label>Email <span style="color:red">*</span></label>
+    <input 
+        type="email"
+        placeholder="example@gmail.com"
+        required
+    >
+</div>
+
+<br>
+
+<!-- Mobile -->
+<div>
+    <label>Mobile Number <span style="color:red">*</span></label>
+    <input 
+        type="tel"
+        placeholder="9876543210"
+        pattern="[0-9]{10}"
+        required
+    >
+</div>
+
+<br>
+
+<!-- DOB -->
+<div>
+    <label>Date of Birth <span style="color:red">*</span></label>
+    <input type="date" required>
+</div>
+
+<br>
+
+<!-- Password -->
+<div>
+    <label>Password <span style="color:red">*</span></label>
+    <input 
+        type="password"
+        minlength="6"
+        maxlength="12"
+        required
+    >
+</div>
+
+<br>
+
+<!-- Gender -->
+<div>
+    <label>Gender <span style="color:red">*</span></label>
+    <input type="radio" name="gender" required> Male
+    <input type="radio" name="gender"> Female
+</div>
+
+<br>
+
+<!-- Languages -->
+<div>
+    <label>Languages</label>
+    <input type="checkbox"> Tamil
+    <input type="checkbox"> English
+    <input type="checkbox"> Malayalam
+</div>
+
+<br>
+
+<!-- Comments -->
+<div>
+    <label>Comments</label><br>
+    <textarea rows="4" cols="30" placeholder="Enter your comments"></textarea>
+</div>
+
+<br>
+
+<!-- Country -->
+<div>
+    <label>Country</label>
+    <select>
+        <option>Choose your country</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+    </select>
+</div>
+
+<br>
+
+<!-- Buttons -->
+<div>
+    <input type="submit" value="Register">
+    <input type="reset" value="Cancel">
+</div>
+
+</form>
+
+</body>
+</html>

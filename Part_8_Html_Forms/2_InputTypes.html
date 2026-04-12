@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+<h2>Job Application Form </h2>
+
+<form>
+
+<!-- Name -->
+<div>
+    <label for="name">Candidate Name:</label>
+    <input 
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Ex: Gopikrishnan"
+        required
+    >
+</div>
+
+<br>
+
+<!-- Password -->
+<div>
+    <label for="password">Password:</label>
+    <input 
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter secure password"
+        required
+    >
+</div>
+
+<br>
+
+<!-- Email -->
+<div>
+    <label for="email">Email:</label>
+    <input 
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+    >
+</div>
+
+<br>
+
+<!-- Date -->
+<div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob">
+</div>
+
+<br>
+
+<!-- Date with time -->
+<div>
+    <label for="datetime">Interview Date & Time:</label>
+    <input type="datetime-local" id="datetime">
+</div>
+
+<br>
+
+<!-- Number -->
+<div>
+    <label for="exp">Experience (Years):</label>
+    <input type="number" id="exp" min="0" max="20">
+</div>
+
+<br>
+
+<!-- Tel -->
+<div>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" placeholder="9876543210">
+</div>
+
+<br>
+
+<!-- Checkbox -->
+<div>
+    Skills:
+    <input type="checkbox"> HTML
+    <input type="checkbox" checked> CSS
+</div>
+
+<br>
+
+<!-- Radio -->
+<div>
+    Gender:
+    <input type="radio" name="gender" checked> Male
+    <input type="radio" name="gender"> Female
+</div>
+
+<br>
+
+<!-- File -->
+<div>
+    Upload Resume:
+    <input type="file">
+</div>
+
+<br>
+
+<!-- Buttons -->
+<div>
+    <input type="submit" value="Register">
+    <input type="reset" value="Cancel">
+</div>
+
+</form>
+
+</body>
+</html>
